@@ -29,7 +29,7 @@ export default function calculateNodeHeight(
   }
 
   if (hiddenTextarea.parentNode === null) {
-    document.body.appendChild(hiddenTextarea);
+    document.querySelector('[name^="flomni:chat"]').contentDocument.body.appendChild(hiddenTextarea);
   }
 
   const { paddingSize, borderSize, sizingStyle } = sizingData;
