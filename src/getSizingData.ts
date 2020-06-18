@@ -22,7 +22,6 @@ const SIZING_STYLE = [
   // non-standard
   'textRendering',
   'textTransform',
-  'width',
 ] as const;
 
 type SizingProps = Extract<
